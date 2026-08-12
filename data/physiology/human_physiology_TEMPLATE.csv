@@ -1,0 +1,15 @@
+compartment,volume_L,flow_Lh,status,source,notes
+arterial_blood,,,,Brown 1997 / ICRP 89,arterial blood pool
+venous_blood,,,,Brown 1997 / ICRP 89,venous blood pool
+lung,,,unverified,Brown 1997 / ICRP 89,receives full cardiac output
+adipose,,,unverified,Brown 1997 / ICRP 89,
+bone,,,unverified,Brown 1997 / ICRP 89,
+brain,,,unverified,Brown 1997 / ICRP 89,
+gut,,,unverified,Brown 1997 / ICRP 89,portal drainage to liver
+heart,,,unverified,Brown 1997 / ICRP 89,
+kidney,,,unverified,Brown 1997 / ICRP 89,
+liver,,,unverified,Brown 1997 / ICRP 89,receives hepatic artery + portal (gut+spleen) flow
+muscle,,,unverified,Brown 1997 / ICRP 89,
+skin,,,unverified,Brown 1997 / ICRP 89,
+spleen,,,unverified,Brown 1997 / ICRP 89,portal drainage to liver
+rest_of_body,,,unverified,Brown 1997 / ICRP 89,lumped remainder to close mass/flow balance
