@@ -1,0 +1,6 @@
+# Quarto project config. output-dir is a PROJECT-level option, so a standalone
+# .qmd would otherwise render next to the source; declaring a project here sends
+# the rendered report into reports/.
+project:
+  type: default
+  output-dir: reports
