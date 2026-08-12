@@ -4,7 +4,7 @@ lipophilicity_logMA,-0.07,log units,verified,"Hansch, Leo & Hoekman 1995 (via OS
 fraction_unbound_plasma,0.7,fraction,verified,Lelo et al. 1986 (via OSP model),plasma fu
 pKa_1,0.8,-,verified,OSP caffeine template model,weak base; single pKa used
 compound_type,base,-,verified,OSP caffeine template model,ionization treated as base
-solubility,21.6,mg/mL,confirm-units,OSP caffeine template model,stored 0.0216 in PK-Sim base units at reference pH 7; = 21.6 mg/mL (caffeine ~21.6 mg/mL). Confirm unit via ospsuite.
+solubility,21.6,mg/mL,verified,OSP caffeine template model,stored 0.0216 kg/L at reference pH 7 -> 21.6 mg/mL; base unit kg/L confirmed from the observed-data serialization (see tools/extract_observed_pksim5.py)
 solubility_reference_pH,7,-,verified,OSP caffeine template model,pH at which solubility applies
 CYP1A2_Km,14.7,umol/L,confirm-units,OSP caffeine template model,Michaelis constant for CYP1A2-MM (liver microsomes). Confirm base vs display unit via ospsuite.
 CYP1A2_Vmax_invitro,109,pmol/min/mg microsomal protein,confirm-units,OSP caffeine template model,"in vitro Vmax, liver microsomes. Confirm unit via ospsuite."

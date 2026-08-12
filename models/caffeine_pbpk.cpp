@@ -103,6 +103,13 @@ URINE : cumulative amount excreted renally (mg) [mass-balance sink]
 double CA = AR / V_ar;                 // arterial blood conc
 double CV = VE / V_ve;                 // venous blood conc
 
+// Total systemic flow = the exact sum of the arterial branch flows. Using this
+// (rather than the separate Q_co parameter) for the lung/arterial/venous pools
+// guarantees the circulation is closed and mass is conserved even if the branch
+// flows and Q_co disagree by rounding (they sum to ~Q_co by construction).
+double Qsum = Q_ad + Q_bo + Q_br + Q_he + Q_ki + Q_ha
+            + Q_mu + Q_sk + Q_th + Q_gu + Q_re;
+
 // Blood conc leaving each tissue = BP * plasma-equiv leaving = BP*(A/V)/Kp
 double out_ad = BP * (AD / V_ad) / Kp_ad;
 double out_bo = BP * (BO / V_bo) / Kp_bo;
@@ -146,16 +153,16 @@ dxdt_GU = Q_gu * (CA - out_gu) + Rabs;
 // Liver: hepatic artery + portal inflow, venous out, minus metabolism
 dxdt_LI = Q_ha * CA + Q_gu * out_gu - (Q_ha + Q_gu) * out_li - Rmet;
 
-// Lung: full cardiac output, venous in -> arterial out
-dxdt_LU = Q_co * CV - Q_co * out_lu;
+// Lung: full systemic flow, venous in -> arterial out
+dxdt_LU = Qsum * CV - Qsum * out_lu;
 
 // Arterial blood: lung output distributed to tissues
-dxdt_AR = Q_co * out_lu - Q_co * CA;
+dxdt_AR = Qsum * out_lu - Qsum * CA;
 
 // Venous blood: collects every tissue outflow (gut goes via liver)
 dxdt_VE = Q_ad*out_ad + Q_bo*out_bo + Q_br*out_br + Q_he*out_he
         + Q_ki*out_ki + Q_mu*out_mu + Q_sk*out_sk + Q_th*out_th
-        + Q_re*out_re + (Q_ha + Q_gu)*out_li - Q_co * CV;
+        + Q_re*out_re + (Q_ha + Q_gu)*out_li - Qsum * CV;
 
 // Mass-balance sinks
 dxdt_MET   = Rmet;
