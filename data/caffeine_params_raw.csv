@@ -1,0 +1,15 @@
+parameter,value,unit,source,source_name,status,notes
+molecular_weight,1.942E-07,g/mol,OSP caffeine template model,Molecular weight,verified,
+lipophilicity_logMA,-0.07,Log Units,"Hansch, C., Leo, A., D. Hoekman. Exploring QSAR - Hydrophobic, Electronic, and Steric Constants. Washington, DC: American Chemical Society., 1995., p. 44",Lipophilicity,verified,
+fraction_unbound_plasma,0.7,Fraction,Lelo et al. 1986,"Fraction unbound (plasma, reference value)",verified,
+pKa_1,0.8,,OSP caffeine template model,pKa value 0,verified,
+solubility_at_ref_pH,0.0216,mg/l,OSP caffeine template model,Solubility at reference pH,verified,
+solubility_reference_pH,7,,OSP caffeine template model,Reference pH,verified,
+intestinal_permeability,1.7837634144E-06,cm/s,OSP caffeine template model,Specific intestinal permeability (transcellular),verified,
+CYP1A2_Vmax_invitro,109,pmol/min/mg mic. protein,OSP caffeine template model,In vitro Vmax for liver microsomes,verified,
+CYP1A2_Km,14.7,µmol/l,OSP caffeine template model,Km,verified,
+microsomal_CYP_content,108,pmol/mg mic. protein,OSP caffeine template model,Content of CYP proteins in liver microsomes,verified,
+calc_method,,,OSP caffeine template model,Cellular partition coefficient method - PK-Sim Standard,verified,tissue distribution / permeability model
+calc_method,,,OSP caffeine template model,Cellular permeability - PK-Sim Standard,verified,tissue distribution / permeability model
+calc_method,,,OSP caffeine template model,Interstitial partition coefficient method - Schmitt,verified,tissue distribution / permeability model
+calc_method,,,OSP caffeine template model,IntestinalPermeability_PKSim,verified,tissue distribution / permeability model
