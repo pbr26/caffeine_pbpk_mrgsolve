@@ -1,0 +1,48 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Working artifacts pulled from PK-Sim / ospsuite (regenerable, not source)
+tables/*.pkml
+tables/pksim_individual_params.csv
+tables/pksim_individual_derived.csv
+
+# renv library (lockfile tracked, library not)
+renv/library/
+renv/local/
+renv/staging/
+renv/python/
+renv/sandbox/
+
+# mrgsolve compiles C++ models to a per-session build cache
+*.o
+*.so
+*.dll
+mrgsolve-so-*/
+.mrgsolve/
+
+# Quarto
+/.quarto/
+*_files/
+*_cache/
+
+# Copyrighted paper PDFs must NOT be committed. DOIs go in literature/README.md.
+literature/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep empty output dirs
+!figures/.gitkeep
+!tables/.gitkeep
+!reports/.gitkeep
+!data/digitized/.gitkeep
+
+# temporary PDF page renders
+literature/_pages/
+
+# Third-party OSP model repos (cloned; reproducible via literature/DOWNLOADS.md)
+literature/osp_models/
