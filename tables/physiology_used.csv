@@ -1,0 +1,15 @@
+compartment,pct_body_weight,pct_cardiac_output,status,source,notes,volume_L,flow_Lh
+adipose,21.42,5.2,verified,Brown 1997 Table 7 (vol) / Table 23 (flow),ICRP Reference Man,14.994000000000002,16.224
+bone,14.29,4.2,verified,Brown 1997 Table 7 / Table 23,bone + marrow,10.003,13.104000000000001
+brain,2,11.4,verified,Brown 1997 Table 7 / Table 23,NA,1.4000000000000001,35.568
+heart,0.47,4,verified,Brown 1997 Table 7 / Table 23,NA,0.32899999999999996,12.48
+kidney,0.44,17.5,verified,Brown 1997 Table 7 / Table 23,NA,0.308,54.599999999999994
+liver,2.57,4.6,verified,Brown 1997 Table 7 / Table 23,"flow is HEPATIC ARTERY only (4.6%); liver also receives portal inflow from gut, so total liver perfusion = 4.6 + 18.1 = 22.7% CO (handled in the model)",1.7989999999999997,14.352
+lung,0.76,100,verified,Brown 1997 Table 7 / Table 23,receives full cardiac output; % CO set to 100 (not summed in the arterial balance),0.532,312
+muscle,40,19.1,verified,Brown 1997 Table 7 / Table 23,NA,28,59.592
+skin,3.71,5.8,verified,Brown 1997 Table 7 / Table 23,NA,2.597,18.096
+thyroid,0.03,1.6,verified,Brown 1997 Table 7 / Table 23,NA,0.020999999999999998,4.992
+gut,2.13,18.1,verified,Brown 1997 Table 7 / Table 23,portal-draining splanchnic block: GI 1.71 + spleen 0.26 + pancreas 0.14 + adrenals 0.02 = 2.13% BW; flow is the portal-vein fraction 18.1% CO,1.4909999999999999,56.47200000000001
+rest_of_body,3.2,8.5,verified,Brown 1997 (closure),balances volume to 70 kg and flow to 100% CO after the tabulated tissues,2.24,26.520000000000003
+arterial_blood,1.8,NA,unverified,ICRP 89 (NOT Brown Table 7),blood not in Brown Table 7; ~1/3 of ~5.4 L total blood. Verify against ICRP 89 or the caffeine paper,1.2600000000000002,NA
+venous_blood,3.9,NA,unverified,ICRP 89 (NOT Brown Table 7),~2/3 of total blood. Verify against ICRP 89 or the caffeine paper,2.73,NA

@@ -1,0 +1,5 @@
+parameter,value,note
+kcat_scale_on_Vmax,0.38152656417815023,"multiplier on in-vitro-scaled whole-liver Vmax (fitted, as Britz fit kcat)"
+Vmax_calibrated_mg_h,34.86927439529576,was 91.4 (in-vitro scaled); calibrated to clinical data
+ka_calibrated_1h,1.1316985190307272,was 1.50 (provisional)
+terminal_half_life_h,3.779596108828624,caffeine literature ~4-6 h
