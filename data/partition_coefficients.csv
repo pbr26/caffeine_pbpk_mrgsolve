@@ -1,0 +1,13 @@
+compartment,pksim_organ,Kp,status,source
+ad,Fat,0.6017,verified,PK-Sim via ospsuite createIndividual (European ICRP 2002)
+mu,Muscle,0.5671,verified,PK-Sim via ospsuite createIndividual (European ICRP 2002)
+bo,Bone,0.2042,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+br,Brain,0.6474,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+he,Heart,0.5833,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+ki,Kidney,0.5745,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+li,Liver,0.54990000000000006,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+lu,Lung,0.5698,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+sk,Skin,0.434,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+th,Gonads,0.5934,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+gu,SmallIntestine,0.619,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata)
+re,(soft-tissue mean),0.5681,derived,mean of well-perfused soft-tissue Kp (rest-of-body closure)

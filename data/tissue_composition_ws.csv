@@ -1,0 +1,12 @@
+compartment,pksim_organ,Vw,Vnl,Vph,status,source,notes
+ad,Fat,0.03,0.92,0.002024,verified,PK-Sim via ospsuite createIndividual (European ICRP 2002),Willmann-Schmitt (-WS) fractions; Fat is individual-specific so read from the created individual
+mu,Muscle,0.76,0.0049,0.0042,verified,PK-Sim via ospsuite createIndividual (European ICRP 2002),Willmann-Schmitt (-WS) fractions; Muscle is individual-specific so read from the created individual
+bo,Bone,0.26,0.017,0.0022,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition (drug-independent physiology)
+br,Brain,0.79,0.0429,0.0528,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+he,Heart,0.70,0.0528,0.0473,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+ki,Kidney,0.73,0.0156,0.0366,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+li,Liver,0.68,0.0232,0.0472,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+lu,Lung,0.74,0.0204,0.0152,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+sk,Skin,0.47,0.126,0.0112,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),Willmann-Schmitt (-WS) tissue composition
+th,Gonads,0.78,0.0,0.0249,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),thyroid proxied by Gonads (small well-perfused organ); WS composition
+gu,SmallIntestine,0.78,0.0483,0.0182,verified,PK-Sim bundled Aciclovir.pkml (ospsuite extdata),splanchnic/gut lumped -> SmallIntestine (absorption-dominant); WS composition
