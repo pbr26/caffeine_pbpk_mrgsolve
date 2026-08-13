@@ -1,6 +1,9 @@
 # Render analysis.qmd and deploy it to GitHub Pages.
 # The report only reads committed CSVs/PNGs (no mrgsolve/ospsuite), so CI needs
 # just R + a few light packages + Quarto -- fast and reliable.
+#
+# REQUIRES: repo Settings -> Pages -> Source = "GitHub Actions" (the deploy job
+# fails until that is set).
 name: Render and deploy report to Pages
 
 on:
@@ -29,19 +32,15 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::readr
-            any::dplyr
-            any::knitr
-            any::rmarkdown
+      - name: Install R packages (binary via public RSPM)
+        run: Rscript -e 'install.packages(c("rmarkdown","knitr","readr","dplyr"))'
 
       - name: Render Quarto report
         run: quarto render analysis.qmd
 
       - name: Prepare Pages site (index.html + .nojekyll)
         run: |
+          test -f reports/analysis.html || (echo "render produced no reports/analysis.html" && ls -R reports && exit 1)
           cp reports/analysis.html reports/index.html
           touch reports/.nojekyll
 
