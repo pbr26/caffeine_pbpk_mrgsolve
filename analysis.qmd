@@ -6,10 +6,10 @@ format:
   html:
     toc: true
     toc-depth: 3
-    code-fold: true
     embed-resources: true
     theme: cosmo
 execute:
+  echo: false
   warning: false
   message: false
 ---
